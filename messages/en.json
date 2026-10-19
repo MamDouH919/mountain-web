@@ -1,0 +1,291 @@
+{
+  "Meta": {
+    "title": "Mountain — Digital Marketing Agency for Brands Worldwide",
+    "description": "Media buying, branding, websites, mobile apps, photography and social media management for clients around the world.",
+    "services": "Services",
+    "servicesDescription": "Seven core services, one team: media buying, design, logos, websites, mobile apps, photography and social media management.",
+    "work": "Work",
+    "workDescription": "Selected designs, logos, websites and apps by Mountain.",
+    "about": "About",
+    "aboutDescription": "A digital agency working with clients worldwide, building brands that look premium and perform.",
+    "contact": "Contact",
+    "contactDescription": "Tell us about your project. We reply within 24 hours.",
+    "notFound": "Page not found"
+  },
+  "Brand": {
+    "name": "Mountain"
+  },
+  "Nav": {
+    "home": "Home",
+    "services": "Services",
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Start a project",
+    "switchTo": "العربية",
+    "switchLabel": "Switch language to Arabic",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Hero": {
+    "eyebrow": "Digital agency · Working worldwide",
+    "titleLine1": "We build brands",
+    "titleLine2": "people remember.",
+    "subtitle": "Strategy, design, technology and paid media under one roof, so your next campaign looks premium and pays for itself.",
+    "primaryCta": "Book a free strategy call",
+    "secondaryCta": "See our work",
+    "stats": {
+      "services": "Core services",
+      "response": "Reply time",
+      "responseValue": "< 24h",
+      "based": "Clients in",
+      "basedValue": "Worldwide"
+    },
+    "scroll": "Scroll"
+  },
+  "Clients": {
+    "title": "Trusted by ambitious brands around the world"
+  },
+  "HomeServices": {
+    "eyebrow": "What we do",
+    "title": "Everything your brand needs to grow, under one roof.",
+    "cta": "Explore all services"
+  },
+  "FeaturedWork": {
+    "eyebrow": "Selected work",
+    "title": "Work that earns attention.",
+    "cta": "View full portfolio",
+    "prev": "Previous project",
+    "next": "Next project"
+  },
+  "Cta": {
+    "eyebrow": "Let's talk",
+    "title": "Ready to look like the market leader?",
+    "subtitle": "Book a free 30-minute strategy call. You'll leave with a clear plan, whether you work with us or not.",
+    "primary": "Book your free call",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "Services": {
+    "eyebrow": "Services",
+    "title": "Seven services. One team accountable for results.",
+    "subtitle": "Pick a single service or combine them into a full growth engine. Either way, you get senior people, clear timelines and honest reporting.",
+    "deliverables": "What you get",
+    "cta": "Discuss this service",
+    "items": {
+      "media-buying": {
+        "title": "Media Buying",
+        "value": "Every pound of ad spend, accountable.",
+        "description": "Meta, Google, TikTok and Snapchat campaigns built around your margins, not vanity metrics. We test fast, cut waste and scale what sells.",
+        "d1": "Full-funnel campaign strategy",
+        "d2": "Creative testing and weekly optimisation",
+        "d3": "Transparent ROAS reporting"
+      },
+      "designs": {
+        "title": "Designs",
+        "value": "Visuals that stop the scroll.",
+        "description": "Social creatives, ad sets, packaging and print designed to one consistent system, so every touchpoint feels unmistakably you.",
+        "d1": "Ad and social creative sets",
+        "d2": "Packaging and print collateral",
+        "d3": "Editable brand templates"
+      },
+      "logos": {
+        "title": "Logos & Identity",
+        "value": "A mark that signals trust on day one.",
+        "description": "Strategic logo and identity design in Arabic and English, with the guidelines your team needs to apply it correctly everywhere.",
+        "d1": "Bilingual logo suite",
+        "d2": "Colour, type and usage guidelines",
+        "d3": "Stationery and social kit"
+      },
+      "websites": {
+        "title": "Websites",
+        "value": "Fast sites that turn visitors into leads.",
+        "description": "Conversion-focused websites and online stores, bilingual and RTL-ready, built to load fast, rank well and be easy for you to update.",
+        "d1": "UX, copy structure and design",
+        "d2": "Next.js or Shopify development",
+        "d3": "SEO, analytics and hosting setup"
+      },
+      "mobile-apps": {
+        "title": "Mobile Apps",
+        "value": "Apps people actually keep.",
+        "description": "iOS and Android apps designed around real user journeys, from MVP to launch, with the analytics to keep improving after release.",
+        "d1": "Product discovery and UX flows",
+        "d2": "Cross-platform development",
+        "d3": "Store launch and support"
+      },
+      "photography": {
+        "title": "Photography",
+        "value": "Imagery that makes your product the hero.",
+        "description": "Product, food, fashion and corporate shoots in the studio or on location, art-directed to match your brand.",
+        "d1": "Art direction and shot lists",
+        "d2": "Studio and on-location shoots",
+        "d3": "Retouched, web-ready assets"
+      },
+      "social-media": {
+        "title": "Social Media Management",
+        "value": "A feed that builds a community, not just followers.",
+        "description": "Monthly content calendars, publishing, community management and reporting, so your brand shows up consistently without draining your time.",
+        "d1": "Monthly content plan and production",
+        "d2": "Publishing and community replies",
+        "d3": "Monthly performance report"
+      }
+    }
+  },
+  "Work": {
+    "eyebrow": "Portfolio",
+    "title": "Selected work.",
+    "subtitle": "A look at recent designs, identities, websites and apps.",
+    "filterLabel": "Filter projects",
+    "empty": "No projects in this category yet.",
+    "filters": {
+      "all": "All",
+      "designs": "Designs",
+      "logos": "Logos",
+      "websites": "Websites",
+      "apps": "Apps"
+    },
+    "projects": {
+      "nile-coffee": {
+        "title": "Nile Roasters",
+        "type": "Brand identity"
+      },
+      "zayed-clinic": {
+        "title": "Zayed Dental Clinic",
+        "type": "Website"
+      },
+      "oud-house": {
+        "title": "Oud House",
+        "type": "Packaging design"
+      },
+      "fit-cairo": {
+        "title": "FitCairo",
+        "type": "Mobile app"
+      },
+      "sahel-resort": {
+        "title": "Sahel Bay Resort",
+        "type": "Campaign design"
+      },
+      "atlas-realty": {
+        "title": "Atlas Realty",
+        "type": "Logo"
+      },
+      "kemet-fashion": {
+        "title": "Kemet Studio",
+        "type": "E-commerce website"
+      },
+      "bloom-bakery": {
+        "title": "Bloom Bakery",
+        "type": "Social media design"
+      },
+      "nova-pay": {
+        "title": "NovaPay",
+        "type": "Fintech app"
+      },
+      "pharaoh-tech": {
+        "title": "Pharaoh Tech",
+        "type": "Logo & identity"
+      }
+    },
+    "gallery": {
+      "open": "View {title}",
+      "count": "{count, plural, one {# image} other {# images}}",
+      "imageOf": "Image {index} of {total}",
+      "prev": "Previous image",
+      "next": "Next image",
+      "close": "Close gallery",
+      "thumbnails": "Choose image",
+      "swipe": "Swipe or use the arrow keys"
+    }
+  },
+  "About": {
+    "eyebrow": "About us",
+    "title": "A studio built for brands that want to lead, wherever they are.",
+    "intro": "Mountain is a digital marketing agency working with clients worldwide. We bring strategy, design, development and paid media together in one small senior team, so ideas move from concept to campaign without getting lost in hand-offs.",
+    "missionTitle": "Our mission",
+    "mission": "To give ambitious businesses everywhere the kind of brand and marketing usually reserved for global names, with the speed, honesty and attention of a partner who feels close by.",
+    "valuesTitle": "What we stand for",
+    "values": {
+      "v1": {
+        "title": "Results over noise",
+        "body": "We measure success in leads and sales, not likes."
+      },
+      "v2": {
+        "title": "Craft in every detail",
+        "body": "Premium is a hundred small decisions made well."
+      },
+      "v3": {
+        "title": "Radical clarity",
+        "body": "Clear scopes, clear timelines, clear reports. No surprises."
+      }
+    },
+    "approachTitle": "How we work",
+    "approach": {
+      "s1": {
+        "title": "Discover",
+        "body": "We learn your business, customers and competitors before we design anything."
+      },
+      "s2": {
+        "title": "Strategise",
+        "body": "A focused plan with goals, channels, budget and the metrics we'll be judged on."
+      },
+      "s3": {
+        "title": "Create",
+        "body": "Design, content and technology built to the plan, reviewed with you at every milestone."
+      },
+      "s4": {
+        "title": "Grow",
+        "body": "Launch, measure and optimise every month, doubling down on what works."
+      }
+    },
+    "locationTitle": "Working with clients worldwide",
+    "locationBody": "Our clients are spread across the Middle East, Europe, North America and beyond. We work remotely across time zones, with meetings online or in person, whichever suits you.",
+    "mapTitle": "World map showing where we work"
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something worth talking about.",
+    "subtitle": "Tell us a little about your project. We reply within 24 hours, Sunday to Thursday.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your full name",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "service": "Service needed",
+      "servicePlaceholder": "Choose a service",
+      "serviceOther": "Not sure yet",
+      "message": "Message",
+      "messagePlaceholder": "Your goals, timeline and budget range",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Thanks! Your message is on its way. We'll be in touch within 24 hours.",
+      "error": "Something went wrong sending your message. Please email or call us directly.",
+      "errors": {
+        "name": "Please enter your name.",
+        "email": "Please enter a valid email address.",
+        "service": "Please choose a service.",
+        "message": "Please tell us a bit more (at least 10 characters)."
+      }
+    },
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "location": "Location",
+      "locationValue": "Worldwide · Remote",
+      "hours": "Hours",
+      "hoursValue": "Sun – Thu, 10:00 – 18:00",
+      "whatsapp": "Prefer WhatsApp? Message us"
+    }
+  },
+  "Footer": {
+    "tagline": "A digital marketing agency working worldwide, building brands that look premium and perform.",
+    "pages": "Pages",
+    "services": "Services",
+    "contact": "Contact",
+    "rights": "All rights reserved.",
+    "madeIn": "Working worldwide"
+  },
+  "NotFound": {
+    "title": "This page wandered off.",
+    "body": "The page you're looking for doesn't exist or has moved.",
+    "cta": "Back to home"
+  }
+}
