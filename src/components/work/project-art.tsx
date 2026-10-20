@@ -1,4 +1,5 @@
-import type { Project } from "@/content/work";
+import { PhoneFrame } from "@/components/work/device-frames";
+import type { CaseStudy, Project } from "@/content/work";
 
 /**
  * Stand-in cover art generated from the project's palette and category, so
@@ -72,6 +73,35 @@ export function ProjectArt({ project, title }: { project: Project; title: string
           <div className="absolute end-[14%] bottom-[22%] h-[32%] w-[30%] rotate-[10deg] rounded-2xl shadow-2xl" style={{ background: light }} />
         </>
       )}
+    </div>
+  );
+}
+
+/**
+ * Cover for a case study: up to three of its real phone shots, fanned out over
+ * the project's palette. The middle phone sits highest so the card title below
+ * stays clear of screenshot text.
+ */
+export function StudyCover({ project, study }: { project: Project; study: CaseStudy }) {
+  const [deep, light] = project.palette;
+  const [first, second, third] = study.phones;
+
+  return (
+    <div
+      aria-hidden
+      className="absolute inset-0 overflow-hidden"
+      style={{ background: `radial-gradient(90% 70% at 50% 15%, ${light}66, transparent 70%), linear-gradient(170deg, ${deep}, #050505 80%)` }}
+    >
+      <div className="absolute inset-0 opacity-30 [background-image:linear-gradient(to_right,rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.07)_1px,transparent_1px)] [background-size:32px_32px]" />
+      <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.04]">
+        {second && (
+          <PhoneFrame src={second} alt="" className="absolute start-[2%] top-[22%] w-[36%] -rotate-[10deg] opacity-80 transition-transform duration-700 group-hover:-rotate-[13deg] rtl:rotate-[10deg] rtl:group-hover:rotate-[13deg]" />
+        )}
+        {third && (
+          <PhoneFrame src={third} alt="" className="absolute end-[2%] top-[22%] w-[36%] rotate-[10deg] opacity-80 transition-transform duration-700 group-hover:rotate-[13deg] rtl:-rotate-[10deg] rtl:group-hover:-rotate-[13deg]" />
+        )}
+        {first && <PhoneFrame src={first} alt="" className="absolute start-1/2 top-[8%] w-[42%] -translate-x-1/2 rtl:translate-x-1/2" />}
+      </div>
     </div>
   );
 }

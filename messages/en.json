@@ -144,6 +144,67 @@
       "apps": "Apps"
     },
     "projects": {
+      "qr-platform": {
+        "title": "Mountain QR",
+        "type": "QR platform · Website & dashboard",
+        "study": {
+          "summary": "One QR code that opens a branded page for each business, with its menu, branches, social links and a one-tap \"save contact\", plus a dashboard to manage it all.",
+          "client": "Restaurants, clinics & shops",
+          "services": "Product design, web & backend development",
+          "challenge": "Local businesses print QR codes on tables, cards and shop windows, but most lead to a plain PDF or a single Instagram link. Customers leave quickly, and the owner can't tell whether anyone scanned at all.",
+          "solution": "We built one platform that serves every client. Each business gets its own branded page and QR code, edits its content from a simple dashboard, and sees exactly how many people visited.",
+          "phonesCaption": "Real client pages, exactly as customers see them after scanning.",
+          "dashboardCaption": "The customers page: every client and how many people it reached.",
+          "stats": {
+            "clients": {
+              "value": "18+",
+              "label": "Businesses live"
+            },
+            "visits": {
+              "value": "1,800+",
+              "label": "Visits tracked"
+            },
+            "languages": {
+              "value": "2",
+              "label": "Languages, Arabic & English"
+            }
+          },
+          "features": {
+            "qr": {
+              "title": "Custom QR code",
+              "body": "A branded QR for each business, ready for menus, cards and stickers."
+            },
+            "page": {
+              "title": "Branded landing page",
+              "body": "Logo, colors, description, branches and menus on one fast mobile page."
+            },
+            "contact": {
+              "title": "One-tap contact",
+              "body": "Save to contacts, call, WhatsApp auto-reply and directions to every branch."
+            },
+            "dashboard": {
+              "title": "Client dashboard",
+              "body": "Owners update their own content, photos and links. No developer needed."
+            },
+            "analytics": {
+              "title": "Visit analytics",
+              "body": "Unique visits per day, week and in total, with bots filtered out."
+            },
+            "ads": {
+              "title": "Built-in ads",
+              "body": "Promote offers on any page and track views and clicks."
+            },
+            "language": {
+              "title": "Arabic & English",
+              "body": "Pages switch language and direction in one tap."
+            },
+            "cloud": {
+              "title": "Fast everywhere",
+              "body": "Images served from Cloudflare's network, so pages load fast on mobile data."
+            }
+          }
+        }
+      },
       "nile-coffee": {
         "title": "Nile Roasters",
         "type": "Brand identity"
@@ -194,6 +255,26 @@
       "close": "Close gallery",
       "thumbnails": "Choose image",
       "swipe": "Swipe or use the arrow keys"
+    },
+    "study": {
+      "eyebrow": "Case study",
+      "client": "Client",
+      "services": "Services",
+      "year": "Year",
+      "live": "Visit live site",
+      "similar": "Start a similar project",
+      "back": "All work",
+      "challengeTitle": "The challenge",
+      "solutionTitle": "What we built",
+      "featuresTitle": "Everything a business needs, in one scan.",
+      "screensTitle": "See it in action.",
+      "stackTitle": "Built with",
+      "next": "Next project",
+      "allWork": "See all our work",
+      "openStudy": "Read the case study for {title}",
+      "badge": "Case study",
+      "phoneAlt": "{title} on a phone, example {index}",
+      "screenAlt": "{title} screenshot {index}"
     }
   },
   "About": {
