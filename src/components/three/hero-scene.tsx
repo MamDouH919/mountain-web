@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
   AdaptiveDpr,
@@ -131,18 +131,33 @@ export default function HeroScene({
   onReady?: () => void;
 }) {
   const pointer = useWindowPointer();
+  const wrapper = useRef<HTMLDivElement>(null);
+  // Stop rendering once the hero scrolls away, so the GPU is free for the rest
+  // of the page. Mobile browsers otherwise drop layers and paint them black.
+  const [inView, setInView] = useState(true);
+
+  useEffect(() => {
+    const el = wrapper.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting));
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
 
   return (
-    <Canvas
-      camera={{ position: [0, 0, 5.2], fov: 40 }}
-      dpr={[1, 1.75]}
-      gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
-      onCreated={() => onReady?.()}
-      aria-hidden
-    >
-      <Studio />
-      <MetalCore pointer={pointer} reducedMotion={reducedMotion} />
-      <AdaptiveDpr pixelated={false} />
-    </Canvas>
+    <div ref={wrapper} className="size-full">
+      <Canvas
+        camera={{ position: [0, 0, 5.2], fov: 40 }}
+        dpr={[1, 1.5]}
+        frameloop={inView ? "always" : "never"}
+        gl={{ antialias: true, alpha: true }}
+        onCreated={() => onReady?.()}
+        aria-hidden
+      >
+        <Studio />
+        <MetalCore pointer={pointer} reducedMotion={reducedMotion} />
+        <AdaptiveDpr pixelated={false} />
+      </Canvas>
+    </div>
   );
 }

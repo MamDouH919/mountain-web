@@ -44,7 +44,7 @@ export async function Footer() {
           <ul className="mt-5 space-y-3 text-sm">
             {serviceIds.map((id) => (
               <li key={id}>
-                <Link href={{ pathname: "/services", hash: id }} className="text-white/60 transition-colors hover:text-white">
+                <Link href={`/services/${id}`} className="text-white/60 transition-colors hover:text-white">
                   {s(`${id}.title`)}
                 </Link>
               </li>

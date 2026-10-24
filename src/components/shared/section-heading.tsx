@@ -47,7 +47,7 @@ export function PageHeader(props: { eyebrow: string; title: string; subtitle?: s
     <section className="relative isolate overflow-hidden px-6 pt-40 pb-16 sm:px-8 sm:pt-48 sm:pb-24">
       <div
         aria-hidden
-        className="absolute -top-40 start-1/2 -z-10 size-[36rem] -translate-x-1/2 rounded-full bg-brand/10 blur-[140px] rtl:translate-x-1/2"
+        className="absolute -top-40 start-1/2 -z-10 size-[36rem] -translate-x-1/2 bg-radial-[closest-side] from-brand/10 to-transparent rtl:translate-x-1/2"
       />
       <div className="mx-auto max-w-6xl">
         <SectionHeading as="h1" {...props} />

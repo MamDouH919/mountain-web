@@ -39,7 +39,7 @@ export async function ServicesOverview() {
                 )}
               >
                 <Link
-                  href={{ pathname: "/services", hash: id }}
+                  href={`/services/${id}`}
                   className="group relative flex h-full min-h-56 flex-col overflow-hidden rounded-3xl border border-white/[0.08] bg-zinc-950/60 p-6 transition-colors duration-500 hover:border-white/20 sm:p-7"
                 >
                   <div

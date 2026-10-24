@@ -31,6 +31,7 @@ export default async function ServicesPage() {
                 deliverables: [t(`items.${id}.d1`), t(`items.${id}.d2`), t(`items.${id}.d3`)],
                 deliverablesLabel: t("deliverables"),
                 cta: t("cta"),
+                learnMore: t("detail.learnMore"),
               }}
             />
           ))}

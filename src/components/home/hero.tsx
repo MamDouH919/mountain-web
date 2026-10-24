@@ -22,8 +22,8 @@ const container: Variants = {
 };
 
 const fadeUp: Variants = {
-  hidden: { opacity: 0, y: 24, filter: "blur(8px)" },
-  show: { opacity: 1, y: 0, filter: "blur(0px)", transition: { duration: 0.9, ease } },
+  hidden: { opacity: 0, y: 24 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.9, ease } },
 };
 
 // Whole lines slide up from behind a mask. Animating per letter would break
@@ -59,7 +59,7 @@ export function Hero() {
       />
       <div
         aria-hidden
-        className="absolute top-1/2 -z-20 size-[42rem] -translate-y-1/2 rounded-full bg-brand/15 blur-[140px] end-[-12rem] lg:end-[-4rem]"
+        className="absolute top-1/2 -z-20 size-[42rem] -translate-y-1/2 bg-radial-[closest-side] from-brand/15 to-transparent end-[-12rem] lg:end-[-4rem]"
       />
 
       {/* 3D object. Full-bleed on mobile behind the copy; on desktop it sits

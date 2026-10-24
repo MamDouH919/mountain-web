@@ -12,7 +12,7 @@ export async function CtaSection() {
   return (
     <section className="px-4 py-20 sm:px-8 sm:py-28">
       <Reveal className="relative isolate mx-auto max-w-6xl overflow-hidden rounded-[2.5rem] border border-white/10 bg-zinc-950 px-6 py-20 text-center sm:px-16 sm:py-28">
-        <div aria-hidden className="absolute start-1/2 top-full -z-10 size-[44rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand/25 blur-[120px] rtl:translate-x-1/2" />
+        <div aria-hidden className="absolute start-1/2 top-full -z-10 size-[44rem] -translate-x-1/2 -translate-y-1/2 bg-radial-[closest-side] from-brand/25 to-transparent rtl:translate-x-1/2" />
         <div aria-hidden className="absolute inset-0 -z-10 opacity-40 [background-image:radial-gradient(rgba(255,255,255,0.12)_1px,transparent_1px)] [background-size:22px_22px] [mask-image:radial-gradient(ellipse_at_center,black,transparent_70%)]" />
 
         <Eyebrow className="justify-center">{t("eyebrow")}</Eyebrow>

@@ -15,6 +15,7 @@ type Copy = {
   deliverables: string[];
   deliverablesLabel: string;
   cta: string;
+  learnMore: string;
 };
 
 export function ServiceCard({ id, index, copy }: { id: ServiceId; index: number; copy: Copy }) {
@@ -37,7 +38,7 @@ export function ServiceCard({ id, index, copy }: { id: ServiceId; index: number;
       onPointerMove={onPointerMove}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.8, ease: easeOut, delay: (index % 2) * 0.08 }}
       whileHover={{ y: -6 }}
       className="group relative flex scroll-mt-32 flex-col md:last:odd:col-span-2 overflow-hidden rounded-[2rem] border border-white/[0.08] bg-zinc-950/70 p-7 transition-colors duration-500 hover:border-white/20 sm:p-9"
@@ -75,13 +76,21 @@ export function ServiceCard({ id, index, copy }: { id: ServiceId; index: number;
         </ul>
       </div>
 
-      <Link
-        href={{ pathname: "/contact", query: { service: id } }}
-        className="relative mt-auto inline-flex items-center gap-2 self-start pt-8 text-sm font-medium text-white/70 transition-colors hover:text-white"
-      >
-        {copy.cta}
-        <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5" />
-      </Link>
+      <div className="relative mt-auto flex flex-wrap items-center gap-x-6 gap-y-3 pt-8 text-sm font-medium">
+        <Link
+          href={`/services/${id}`}
+          className="inline-flex items-center gap-2 text-white transition-colors hover:text-brand"
+        >
+          {copy.learnMore}
+          <ArrowUpRight className="size-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 rtl:-scale-x-100 rtl:group-hover:-translate-x-0.5" />
+        </Link>
+        <Link
+          href={{ pathname: "/contact", query: { service: id } }}
+          className="text-white/50 transition-colors hover:text-white"
+        >
+          {copy.cta}
+        </Link>
+      </div>
     </motion.div>
   );
 }

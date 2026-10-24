@@ -78,7 +78,39 @@
         "description": "Meta, Google, TikTok and Snapchat campaigns built around your margins, not vanity metrics. We test fast, cut waste and scale what sells.",
         "d1": "Full-funnel campaign strategy",
         "d2": "Creative testing and weekly optimisation",
-        "d3": "Transparent ROAS reporting"
+        "d3": "Transparent ROAS reporting",
+        "intro": "We plan, launch and manage paid campaigns across Meta, Google, TikTok and Snapchat with one goal: profitable growth. Every campaign starts from your unit economics, so we know what a customer is worth before we spend a pound to acquire one. From there we test creatives and audiences quickly, shift budget toward what converts and report results in plain language.",
+        "d4": "Pixel, conversion API and tracking setup",
+        "d5": "Audience research and retargeting funnels",
+        "d6": "Monthly strategy review call",
+        "steps": {
+          "s1": {
+            "title": "Audit",
+            "body": "We review your accounts, tracking and past results to find wasted spend and quick wins."
+          },
+          "s2": {
+            "title": "Plan",
+            "body": "We set targets from your margins and map campaigns to each stage of the funnel."
+          },
+          "s3": {
+            "title": "Launch & test",
+            "body": "Campaigns go live with multiple creatives and audiences to learn fast."
+          },
+          "s4": {
+            "title": "Optimise & scale",
+            "body": "Weekly tuning cuts what doesn't work and scales what sells."
+          }
+        },
+        "faq": {
+          "q1": {
+            "q": "Is there a minimum ad budget?",
+            "a": "We recommend a monthly ad budget that gives each campaign enough data to learn. We'll suggest a realistic figure after the audit."
+          },
+          "q2": {
+            "q": "Who owns the ad accounts?",
+            "a": "You do. We work inside your business accounts, so all data and history stay with you."
+          }
+        }
       },
       "designs": {
         "title": "Designs",
@@ -86,7 +118,39 @@
         "description": "Social creatives, ad sets, packaging and print designed to one consistent system, so every touchpoint feels unmistakably you.",
         "d1": "Ad and social creative sets",
         "d2": "Packaging and print collateral",
-        "d3": "Editable brand templates"
+        "d3": "Editable brand templates",
+        "intro": "Good design makes people stop, understand and act. We create social posts, ad creatives, packaging and print built on one visual system, so every piece looks like it belongs to your brand. Each design is made for its channel and its goal, whether that's a click, a sale or simply being remembered.",
+        "d4": "Campaign key visuals",
+        "d5": "Presentation and company profile design",
+        "d6": "Print-ready and web-ready exports",
+        "steps": {
+          "s1": {
+            "title": "Brief",
+            "body": "We learn your goals, audience and the channels the designs will live on."
+          },
+          "s2": {
+            "title": "Concept",
+            "body": "We present creative directions so you can pick the one that fits."
+          },
+          "s3": {
+            "title": "Design",
+            "body": "The chosen direction is developed into a complete set of assets."
+          },
+          "s4": {
+            "title": "Deliver",
+            "body": "You receive final files in every size and format you need, plus editable sources."
+          }
+        },
+        "faq": {
+          "q1": {
+            "q": "How many revisions are included?",
+            "a": "Each project includes two rounds of revisions, which is usually enough to get every detail right."
+          },
+          "q2": {
+            "q": "Do I get the source files?",
+            "a": "Yes. You receive editable source files along with the final exports."
+          }
+        }
       },
       "logos": {
         "title": "Logos & Identity",
@@ -94,7 +158,39 @@
         "description": "Strategic logo and identity design in Arabic and English, with the guidelines your team needs to apply it correctly everywhere.",
         "d1": "Bilingual logo suite",
         "d2": "Colour, type and usage guidelines",
-        "d3": "Stationery and social kit"
+        "d3": "Stationery and social kit",
+        "intro": "Your logo is often the first thing people see. We design marks that are simple, memorable and work equally well in Arabic and English, on a business card or a billboard. Beyond the logo, we build a complete identity system with colours, typography and clear rules, so your brand stays consistent as it grows.",
+        "d4": "Brand strategy and positioning workshop",
+        "d5": "Logo variations for every use",
+        "d6": "Full brand guidelines document",
+        "steps": {
+          "s1": {
+            "title": "Discover",
+            "body": "A workshop to define your values, audience and how you want to be seen."
+          },
+          "s2": {
+            "title": "Explore",
+            "body": "We sketch and refine several logo concepts based on the strategy."
+          },
+          "s3": {
+            "title": "Refine",
+            "body": "The selected concept is perfected in both languages and every size."
+          },
+          "s4": {
+            "title": "Systemise",
+            "body": "We build the colours, type and guidelines that bring the identity together."
+          }
+        },
+        "faq": {
+          "q1": {
+            "q": "How long does an identity project take?",
+            "a": "Most identity projects take three to five weeks, depending on scope and feedback time."
+          },
+          "q2": {
+            "q": "Can you refresh my existing logo?",
+            "a": "Yes. We can modernise your current mark while keeping the recognition you've already built."
+          }
+        }
       },
       "websites": {
         "title": "Websites",
@@ -102,7 +198,39 @@
         "description": "Conversion-focused websites and online stores, bilingual and RTL-ready, built to load fast, rank well and be easy for you to update.",
         "d1": "UX, copy structure and design",
         "d2": "Next.js or Shopify development",
-        "d3": "SEO, analytics and hosting setup"
+        "d3": "SEO, analytics and hosting setup",
+        "intro": "Your website should work as hard as your best salesperson. We design and build fast, bilingual websites and online stores that explain what you do clearly and guide visitors to take action. Everything is built with speed, search visibility and easy updates in mind, so your site keeps performing long after launch.",
+        "d4": "Fully responsive, RTL-ready layouts",
+        "d5": "Content management for easy updates",
+        "d6": "Training and post-launch support",
+        "steps": {
+          "s1": {
+            "title": "Discover",
+            "body": "We define goals, audiences and the pages your site needs to convert."
+          },
+          "s2": {
+            "title": "Design",
+            "body": "Wireframes and visual designs are reviewed with you before any code is written."
+          },
+          "s3": {
+            "title": "Build",
+            "body": "We develop, test across devices and connect analytics and forms."
+          },
+          "s4": {
+            "title": "Launch",
+            "body": "We handle hosting, SEO basics and go-live, then train your team."
+          }
+        },
+        "faq": {
+          "q1": {
+            "q": "Will I be able to edit the site myself?",
+            "a": "Yes. We set up an easy content management system and show your team how to use it."
+          },
+          "q2": {
+            "q": "Do you build online stores?",
+            "a": "Yes. We build stores on Shopify or custom Next.js, with payments and shipping configured."
+          }
+        }
       },
       "mobile-apps": {
         "title": "Mobile Apps",
@@ -110,7 +238,39 @@
         "description": "iOS and Android apps designed around real user journeys, from MVP to launch, with the analytics to keep improving after release.",
         "d1": "Product discovery and UX flows",
         "d2": "Cross-platform development",
-        "d3": "Store launch and support"
+        "d3": "Store launch and support",
+        "intro": "We turn ideas into apps people use every day. Starting with your users' real needs, we design clear journeys and build reliable iOS and Android apps from a single codebase. We help you launch a focused first version, measure how people use it and improve it based on real data.",
+        "d4": "UI design and interactive prototypes",
+        "d5": "Admin dashboard and backend integration",
+        "d6": "Analytics and crash reporting",
+        "steps": {
+          "s1": {
+            "title": "Discover",
+            "body": "We define the problem, the users and the smallest version worth launching."
+          },
+          "s2": {
+            "title": "Design",
+            "body": "Flows and interactive prototypes are tested before development starts."
+          },
+          "s3": {
+            "title": "Develop",
+            "body": "We build in short sprints and share working builds as we go."
+          },
+          "s4": {
+            "title": "Launch & grow",
+            "body": "We publish to the stores and keep improving based on usage data."
+          }
+        },
+        "faq": {
+          "q1": {
+            "q": "Do you build for both iOS and Android?",
+            "a": "Yes. We use cross-platform technology, so one codebase serves both platforms."
+          },
+          "q2": {
+            "q": "What happens after launch?",
+            "a": "We offer maintenance and growth plans to fix issues, ship updates and add features."
+          }
+        }
       },
       "photography": {
         "title": "Photography",
@@ -118,7 +278,39 @@
         "description": "Product, food, fashion and corporate shoots in the studio or on location, art-directed to match your brand.",
         "d1": "Art direction and shot lists",
         "d2": "Studio and on-location shoots",
-        "d3": "Retouched, web-ready assets"
+        "d3": "Retouched, web-ready assets",
+        "intro": "Great photos sell. We plan and shoot product, food, fashion and corporate imagery that shows your offer at its best. Every shoot is art-directed to fit your brand and the places the images will be used, from your website and ads to menus and social media.",
+        "d4": "Styling, props and location scouting",
+        "d5": "Lifestyle and flat-lay compositions",
+        "d6": "Images sized for web, social and print",
+        "steps": {
+          "s1": {
+            "title": "Plan",
+            "body": "We agree on the goal, mood and a detailed shot list."
+          },
+          "s2": {
+            "title": "Prepare",
+            "body": "We arrange styling, props, models and location if needed."
+          },
+          "s3": {
+            "title": "Shoot",
+            "body": "Our team shoots in the studio or on location, with you involved as much as you like."
+          },
+          "s4": {
+            "title": "Edit",
+            "body": "We select, retouch and deliver the final images ready to use."
+          }
+        },
+        "faq": {
+          "q1": {
+            "q": "Can you shoot at our location?",
+            "a": "Yes. We bring lighting and equipment to your store, restaurant or office."
+          },
+          "q2": {
+            "q": "How soon will we receive the photos?",
+            "a": "Final retouched images are usually delivered within five to seven working days."
+          }
+        }
       },
       "social-media": {
         "title": "Social Media Management",
@@ -126,8 +318,51 @@
         "description": "Monthly content calendars, publishing, community management and reporting, so your brand shows up consistently without draining your time.",
         "d1": "Monthly content plan and production",
         "d2": "Publishing and community replies",
-        "d3": "Monthly performance report"
+        "d3": "Monthly performance report",
+        "intro": "Showing up consistently on social media takes time most businesses don't have. We take care of it end to end: planning content around your goals, producing posts and reels, publishing on schedule and replying to your audience. Every month you get a clear report on what worked and what we'll do next.",
+        "d4": "Reels and short-form video production",
+        "d5": "Hashtag and trend research",
+        "d6": "Competitor monitoring",
+        "steps": {
+          "s1": {
+            "title": "Audit",
+            "body": "We review your accounts, audience and competitors to find opportunities."
+          },
+          "s2": {
+            "title": "Plan",
+            "body": "We build a monthly content calendar for your approval."
+          },
+          "s3": {
+            "title": "Create & publish",
+            "body": "Posts and reels are produced and published on schedule."
+          },
+          "s4": {
+            "title": "Engage & report",
+            "body": "We reply to your community and report results every month."
+          }
+        },
+        "faq": {
+          "q1": {
+            "q": "Which platforms do you manage?",
+            "a": "Instagram, Facebook, TikTok, Snapchat, LinkedIn and X, depending on where your audience is."
+          },
+          "q2": {
+            "q": "Do I approve content before it's posted?",
+            "a": "Yes. You approve the monthly calendar before anything goes live."
+          }
+        }
       }
+    },
+    "detail": {
+      "back": "All services",
+      "eyebrow": "Service",
+      "overviewTitle": "Overview",
+      "includedTitle": "Everything that's included",
+      "processTitle": "How we work",
+      "faqTitle": "Common questions",
+      "next": "Next service",
+      "cta": "Start a project",
+      "learnMore": "Explore service"
     }
   },
   "Work": {

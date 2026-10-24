@@ -89,8 +89,8 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
       <section className="relative isolate overflow-hidden px-6 pt-36 pb-14 sm:px-8 sm:pt-44 sm:pb-20">
         <div
           aria-hidden
-          className="absolute -top-40 start-1/2 -z-10 size-[40rem] -translate-x-1/2 rounded-full blur-[150px] rtl:translate-x-1/2"
-          style={{ background: `${project.palette[1]}26` }}
+          className="absolute -top-40 start-1/2 -z-10 size-[40rem] -translate-x-1/2 rtl:translate-x-1/2"
+          style={{ background: `radial-gradient(closest-side, ${project.palette[1]}26, transparent)` }}
         />
         <div className="mx-auto max-w-6xl">
           <Reveal>
