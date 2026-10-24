@@ -37,9 +37,26 @@ export type CaseStudy = {
   /** Keys under study.stats. */
   stats: string[];
   stack: string[];
+  /** Features that only come with the full plan, tagged on their cards. */
+  fullOnly?: CaseStudyFeature[];
+  /** A product sold in two plans gets a side-by-side comparison. */
+  plans?: PlanComparison;
 };
 
-export const featureIcons = ["qr", "page", "dashboard", "analytics", "ads", "contact", "language", "cloud"] as const;
+/** Copy lives under study.plans: catalog/full cards, rows.<key> and the upgrade note. */
+export type PlanComparison = {
+  /** Keys under study.plans.rows, in table order. The full plan has every row. */
+  rows: string[];
+  /** The rows the catalog plan also has. */
+  catalog: string[];
+  /** Live stores on each plan, linked under its card. */
+  examples: { catalog: string[]; full: string[] };
+};
+
+export const featureIcons = [
+  "qr", "page", "dashboard", "analytics", "ads", "contact", "language", "cloud",
+  "storefront", "search", "whatsapp", "branding", "orders", "coupons", "inventory", "finance", "roles", "tenants",
+] as const;
 export type CaseStudyFeature = (typeof featureIcons)[number];
 
 /** `/work/<id>/1.webp` … `/work/<id>/<count>.webp` */
@@ -69,6 +86,39 @@ export const projects: Project[] = [
       features: ["qr", "page", "contact", "dashboard", "analytics", "ads", "language", "cloud"],
       stats: ["clients", "visits", "languages"],
       stack: ["Next.js", "React", "NestJS", "MongoDB", "Material UI", "Cloudflare R2"],
+    },
+  },
+  {
+    id: "product-preview",
+    category: "websites",
+    aspect: "wide",
+    palette: ["#1c1410", "#c9a26b"],
+    featured: true,
+    caseStudy: {
+      url: "https://gravity.novaslash.com",
+      year: "2026",
+      screens: ["/work/product-preview/home.jpg", "/work/product-preview/category.jpg"],
+      phones: [
+        "/work/product-preview/phone-gravity-home.jpg",
+        "/work/product-preview/phone-ranosh-home.jpg",
+        "/work/product-preview/phone-gravity-product.jpg",
+        "/work/product-preview/phone-ranosh-product.jpg",
+      ],
+      features: [
+        "storefront", "search", "whatsapp", "branding", "language", "dashboard", "roles", "tenants",
+        "orders", "coupons", "inventory", "finance",
+      ],
+      fullOnly: ["orders", "coupons", "inventory", "finance"],
+      stats: ["plans", "stores", "languages"],
+      stack: ["Next.js", "React", "NestJS", "MongoDB", "Material UI", "Redux Toolkit", "Cloudflare R2"],
+      plans: {
+        rows: ["website", "whatsapp", "dashboard", "cart", "accounts", "coupons", "tracking", "returns", "inventory", "finance", "couriers"],
+        catalog: ["website", "whatsapp", "dashboard"],
+        examples: {
+          catalog: ["https://gravity.novaslash.com", "https://ranosh.novaslash.com"],
+          full: [],
+        },
+      },
     },
   },
   { id: "nile-coffee", category: "logos", aspect: "tall", palette: ["#7c2d12", "#f59e0b"], featured: true, images: shots("nile-coffee", 4) },

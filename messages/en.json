@@ -440,6 +440,164 @@
           }
         }
       },
+      "product-preview": {
+        "title": "Mountain Store",
+        "type": "E-commerce platform · Catalog & full shop",
+        "study": {
+          "summary": "One platform that runs many online stores, each with its own domain, brand and dashboard. Sell it as a product catalog that takes orders on WhatsApp, or as a full shop with checkout, stock and accounting.",
+          "client": "Gravity Fragrance, Ranosh Store & more",
+          "services": "Product design, web & backend development",
+          "challenge": "Most small brands sell through Instagram and WhatsApp. A full e-commerce system is too much for some of them, and others outgrow a simple catalog quickly. Building a new site for every brand is slow, and every one of them has to be maintained separately.",
+          "solution": "We built one codebase that serves every store from its own domain and database. Each brand starts on the plan that fits it, Catalog or Full, and can move to Full later with one setting. Same products, same site, no migration.",
+          "featuresTitle": "Everything a store needs, from the first product to the books.",
+          "screensTitle": "Real stores, live today.",
+          "phonesCaption": "Gravity Fragrance and Ranosh Store on the Catalog plan, exactly as their customers see them.",
+          "dashboardCaption": "Category page: products with variants, prices and a WhatsApp button on every card.",
+          "stats": {
+            "plans": {
+              "value": "2",
+              "label": "Plans: Catalog & Full"
+            },
+            "stores": {
+              "value": "1 → ∞",
+              "label": "One codebase, unlimited stores"
+            },
+            "languages": {
+              "value": "2",
+              "label": "Languages, Arabic & English with full RTL"
+            }
+          },
+          "features": {
+            "storefront": {
+              "title": "Storefront",
+              "body": "Banner slider, categories, sub-categories, product pages and custom content sections."
+            },
+            "search": {
+              "title": "Search & filters",
+              "body": "Search in Arabic or English, price range, in-stock and sorting, all saved in a shareable link."
+            },
+            "whatsapp": {
+              "title": "WhatsApp ordering",
+              "body": "A WhatsApp button on every product sends the store a message with the product already named."
+            },
+            "branding": {
+              "title": "Your own brand",
+              "body": "Logo, colors, currency, contact details and social links per store, on its own domain."
+            },
+            "language": {
+              "title": "Arabic & English",
+              "body": "Every product and page in both languages, with full right-to-left layout."
+            },
+            "dashboard": {
+              "title": "Admin dashboard",
+              "body": "Products with variants and images, drag-and-drop ordering and a rich text editor."
+            },
+            "roles": {
+              "title": "Team permissions",
+              "body": "Roles with permissions per section and action, so every employee sees only their work."
+            },
+            "tenants": {
+              "title": "Multi-store platform",
+              "body": "Each store has its own database and uploads. A new store is ready in minutes."
+            },
+            "orders": {
+              "title": "Cart & checkout",
+              "body": "Customer accounts, saved addresses, wishlist, cash on delivery and order tracking with emails."
+            },
+            "coupons": {
+              "title": "Coupons",
+              "body": "Percentage or fixed, minimum order, dates and limits per customer."
+            },
+            "inventory": {
+              "title": "Inventory",
+              "body": "Stock per variant, low-stock alerts, stock takes, purchases and suppliers. No overselling."
+            },
+            "finance": {
+              "title": "Accounting",
+              "body": "Double-entry books, cash accounts, couriers, refunds and profit, cash-flow and sales reports."
+            }
+          },
+          "plans": {
+            "eyebrow": "Two plans, one platform",
+            "title": "Catalog or full shop: pick what fits the business today.",
+            "subtitle": "Both plans run on the same code and the same dashboard. The plan decides which parts are switched on.",
+            "flowTitle": "How a customer buys",
+            "bestFor": "Best for:",
+            "feature": "What's included",
+            "upgrade": "Moving from Catalog to Full is one setting on the platform. Products, images and the website stay as they are.",
+            "catalog": {
+              "label": "Plan 01",
+              "name": "Catalog",
+              "badge": "Fast start",
+              "body": "A branded website for your products and categories. Visitors browse, pick what they like and message you on WhatsApp. Nothing is ordered or paid online.",
+              "flow": [
+                "Browse products and categories",
+                "Tap WhatsApp on the product",
+                "Agree on the order in the chat"
+              ],
+              "bestFor": "brands that already sell on Instagram and WhatsApp and want a professional place to show everything."
+            },
+            "full": {
+              "label": "Plan 02",
+              "name": "Full shop",
+              "badge": "Everything",
+              "body": "Everything in Catalog, plus a real online shop: cart, checkout, customer accounts, coupons, stock and the books, all managed from the dashboard.",
+              "flow": [
+                "Add products to the cart",
+                "Check out with an account and address",
+                "Track the order until delivery"
+              ],
+              "bestFor": "stores that take many orders a day and want stock and money tracked automatically."
+            },
+            "rows": {
+              "website": {
+                "title": "Website, products & categories",
+                "body": "Banners, sections, search, variants, both languages"
+              },
+              "whatsapp": {
+                "title": "WhatsApp & call buttons",
+                "body": "On every product and page"
+              },
+              "dashboard": {
+                "title": "Admin dashboard & team roles",
+                "body": "Content, branding and settings"
+              },
+              "cart": {
+                "title": "Cart & checkout",
+                "body": "Prices always checked on the server, cash on delivery"
+              },
+              "accounts": {
+                "title": "Customer accounts",
+                "body": "Sign-up, addresses, wishlist and order history"
+              },
+              "coupons": {
+                "title": "Coupons",
+                "body": "Discounts with dates and limits"
+              },
+              "tracking": {
+                "title": "Order tracking & emails",
+                "body": "Confirmed, shipped, delivered, cancelled"
+              },
+              "returns": {
+                "title": "Returns & refunds",
+                "body": "With approval rules"
+              },
+              "inventory": {
+                "title": "Inventory, purchases & suppliers",
+                "body": "Stock per variant, stock takes, cost tracking"
+              },
+              "finance": {
+                "title": "Accounting & reports",
+                "body": "Profit and loss, cash flow, receivables, payables"
+              },
+              "couriers": {
+                "title": "Couriers & cash collection",
+                "body": "What each courier holds and settles"
+              }
+            }
+          }
+        }
+      },
       "nile-coffee": {
         "title": "Nile Roasters",
         "type": "Brand identity"
@@ -509,7 +667,10 @@
       "openStudy": "Read the case study for {title}",
       "badge": "Case study",
       "phoneAlt": "{title} on a phone, example {index}",
-      "screenAlt": "{title} screenshot {index}"
+      "screenAlt": "{title} screenshot {index}",
+      "included": "Included",
+      "notIncluded": "Not included",
+      "fullOnly": "Full plan"
     }
   },
   "About": {

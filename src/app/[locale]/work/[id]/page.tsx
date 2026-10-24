@@ -3,12 +3,22 @@ import { notFound } from "next/navigation";
 import {
   ArrowLeft,
   ArrowUpRight,
+  Boxes,
+  Calculator,
   ChartColumn,
   Languages,
+  Layers,
   LayoutDashboard,
   Megaphone,
+  MessageCircle,
+  Palette,
   QrCode,
+  Search,
+  ShieldCheck,
+  ShoppingCart,
   Smartphone,
+  Store,
+  TicketPercent,
   UserPlus,
   Zap,
   type LucideIcon,
@@ -19,6 +29,7 @@ import { CtaSection } from "@/components/home/cta-section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { Eyebrow } from "@/components/shared/section-heading";
 import { BrowserFrame, PhoneFrame } from "@/components/work/device-frames";
+import { PlanComparison } from "@/components/work/plan-comparison";
 import { projects, type CaseStudyFeature } from "@/content/work";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
@@ -34,6 +45,16 @@ const featureIcon: Record<CaseStudyFeature, LucideIcon> = {
   ads: Megaphone,
   language: Languages,
   cloud: Zap,
+  storefront: Store,
+  search: Search,
+  whatsapp: MessageCircle,
+  branding: Palette,
+  orders: ShoppingCart,
+  coupons: TicketPercent,
+  inventory: Boxes,
+  finance: Calculator,
+  roles: ShieldCheck,
+  tenants: Layers,
 };
 
 export function generateStaticParams() {
@@ -73,6 +94,8 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
   const t = await getTranslations("Work.study");
   const w = await getTranslations(`Work.projects.${id}`);
   const title = w("title");
+  // Shared section titles, unless the project words its own.
+  const own = (key: "featuresTitle" | "screensTitle") => (w.has(`study.${key}`) ? w(`study.${key}`) : t(key));
 
   const next = studies.length > 1 ? studies[(studies.indexOf(project) + 1) % studies.length] : null;
   const nextTitle = next ? (await getTranslations(`Work.projects.${next.id}`))("title") : null;
@@ -189,12 +212,14 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
         </RevealGroup>
       </section>
 
+      {study.plans && <PlanComparison id={id} plans={study.plans} />}
+
       {/* Phones */}
       <section className="overflow-hidden py-10 sm:py-16">
         <div className="mx-auto max-w-6xl px-6 sm:px-8">
           <Reveal>
             <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] font-semibold tracking-[-0.03em] text-white rtl:leading-[1.35] rtl:tracking-normal">
-              {t("screensTitle")}
+              {own("screensTitle")}
             </h2>
             <p className="mt-4 max-w-xl text-base text-white/55 sm:text-lg">{w("study.phonesCaption")}</p>
           </Reveal>
@@ -213,7 +238,7 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <h2 className="max-w-2xl text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] font-semibold tracking-[-0.03em] text-balance text-white rtl:leading-[1.35] rtl:tracking-normal">
-              {t("featuresTitle")}
+              {own("featuresTitle")}
             </h2>
           </Reveal>
           <RevealGroup stagger={0.05} className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -224,9 +249,16 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
                   key={key}
                   className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 transition-colors hover:border-white/20 hover:bg-white/[0.04]"
                 >
-                  <span className="flex size-11 items-center justify-center rounded-2xl bg-brand/15 text-brand">
-                    <Icon className="size-5" />
-                  </span>
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="flex size-11 items-center justify-center rounded-2xl bg-brand/15 text-brand">
+                      <Icon className="size-5" />
+                    </span>
+                    {study.fullOnly?.includes(key) && (
+                      <span className="inline-flex h-6 items-center rounded-full border border-brand/40 px-2.5 text-[11px] font-semibold text-brand">
+                        {t("fullOnly")}
+                      </span>
+                    )}
+                  </div>
                   <h3 className="mt-5 text-base font-semibold text-white">{w(`study.features.${key}.title`)}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-white/55">{w(`study.features.${key}.body`)}</p>
                 </RevealItem>
