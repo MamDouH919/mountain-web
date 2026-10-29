@@ -26,10 +26,16 @@ export type Project = {
 
 export type CaseStudy = {
   /** Live site, shown as "Visit live site". */
-  url: string;
+  url?: string;
+  /** Store listings of a mobile app, shown as download badges. */
+  stores?: { appStore?: string; googlePlay?: string };
   year: string;
-  /** Desktop screenshots, framed in a browser window. Hero shot first. */
-  screens: string[];
+  /**
+   * Desktop screenshots, framed in a browser window. Hero shot first. Leave
+   * empty for an app: its phones take the hero instead. A shot from another
+   * address than `url`, such as a dashboard, names its own.
+   */
+  screens: (string | { src: string; url: string })[];
   /** Mobile screenshots, framed as phones. */
   phones: string[];
   /** Keys under study.features, in display order. */
@@ -41,6 +47,10 @@ export type CaseStudy = {
   fullOnly?: CaseStudyFeature[];
   /** A product sold in two plans gets a side-by-side comparison. */
   plans?: PlanComparison;
+  /** Who uses the product, as cards: keys under study.audiences. */
+  audiences?: { key: string; icon: CaseStudyFeature }[];
+  /** The main flow, step by step: keys under study.journey.steps. */
+  journey?: string[];
 };
 
 /** Copy lives under study.plans: catalog/full cards, rows.<key> and the upgrade note. */
@@ -56,6 +66,8 @@ export type PlanComparison = {
 export const featureIcons = [
   "qr", "page", "dashboard", "analytics", "ads", "contact", "language", "cloud",
   "storefront", "search", "whatsapp", "branding", "orders", "coupons", "inventory", "finance", "roles", "tenants",
+  "rider", "owner", "driver", "booking", "map", "kyc", "handover", "payments", "reviews", "notifications", "fleet", "reports",
+  "tryon", "lens", "prescription", "doctors", "delivery",
 ] as const;
 export type CaseStudyFeature = (typeof featureIcons)[number];
 
@@ -119,6 +131,73 @@ export const projects: Project[] = [
           full: [],
         },
       },
+    },
+  },
+  {
+    id: "ala-elsare3",
+    category: "apps",
+    aspect: "tall",
+    palette: ["#2a0505", "#c81e1e"],
+    featured: true,
+    caseStudy: {
+      stores: {
+        appStore: "https://apps.apple.com/eg/app/3ala-el-sare3/id6758057778",
+        googlePlay: "https://play.google.com/store/apps/details?id=com.alaaelsare3.app",
+      },
+      year: "2026",
+      screens: [],
+      phones: [
+        "/work/ala-elsare3/phone-home.jpg",
+        "/work/ala-elsare3/phone-account-type.jpg",
+        "/work/ala-elsare3/phone-map.jpg",
+      ],
+      audiences: [
+        { key: "rider", icon: "rider" },
+        { key: "owner", icon: "owner" },
+        { key: "driver", icon: "driver" },
+        { key: "admin", icon: "dashboard" },
+      ],
+      journey: ["request", "approve", "handover", "onRent", "inspection", "complete"],
+      features: [
+        "booking", "map", "fleet", "kyc", "handover", "payments",
+        "reviews", "notifications", "dashboard", "reports", "roles", "language",
+      ],
+      stats: ["platforms", "accounts", "brands"],
+      stack: ["NestJS", "PostgreSQL", "Prisma", "Redis", "BullMQ", "Socket.IO", "Next.js", "Material UI"],
+    },
+  },
+  {
+    id: "osa-optics",
+    category: "websites",
+    aspect: "tall",
+    palette: ["#062823", "#1f9e88"],
+    featured: true,
+    caseStudy: {
+      url: "https://osaoptics.com/eg-ar",
+      stores: {
+        appStore: "https://apps.apple.com/eg/app/osa-optics/id6760480660",
+        googlePlay: "https://play.google.com/store/apps/details?id=com.optical.app.optical",
+      },
+      year: "2025–2026",
+      screens: [
+        "/work/osa-optics/home.jpg",
+        "/work/osa-optics/product.jpg",
+        "/work/osa-optics/lenses.jpg",
+        { src: "/work/osa-optics/dashboard-products.jpg", url: "https://dashboard.osaoptics.com" },
+      ],
+      phones: [
+        "/work/osa-optics/phone-app-home.jpg",
+        "/work/osa-optics/phone-app-product.jpg",
+        "/work/osa-optics/phone-tryon.jpg",
+        "/work/osa-optics/phone-prescription.jpg",
+      ],
+      journey: ["frame", "tryon", "prescription", "lens", "checkout", "delivery"],
+      features: [
+        "tryon", "lens", "prescription", "storefront", "payments", "delivery",
+        "doctors", "notifications", "dashboard", "roles", "page", "language",
+      ],
+      stats: ["products", "platforms", "languages"],
+      stack: ["Next.js", "React", "GraphQL", "Apollo Client", "Material UI", "Redux Toolkit", "Pusher", "Firebase"],
     },
   },
   { id: "nile-coffee", category: "logos", aspect: "tall", palette: ["#7c2d12", "#f59e0b"], featured: true, images: shots("nile-coffee", 4) },

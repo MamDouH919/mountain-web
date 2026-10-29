@@ -598,6 +598,277 @@
           }
         }
       },
+      "ala-elsare3": {
+        "title": "3ala El Sare3",
+        "type": "Ride & car rental app · iOS, Android & dashboard",
+        "study": {
+          "summary": "A mobile app for booking a ride or renting a car in Egypt, with one app for riders, car owners and drivers, and a dashboard that runs the whole marketplace.",
+          "client": "3ala El Sare3, Egypt",
+          "services": "Mobile app, admin dashboard & backend",
+          "challenge": "Renting a car or a driver in Egypt still runs on phone calls and trust. Prices aren't clear upfront, owners can't tell who they're handing their car to, and when the car comes back scratched, nobody has proof of how it left.",
+          "solution": "We built one app with three account types: riders book, owners list their cars and accept requests, and drivers take trips. Everyone is verified before their first booking, every handover and return is photographed, and the team runs it all from one dashboard.",
+          "phonesCaption": "The app on iPhone and Android: picking an account type, booking a ride or a rental, and setting the pickup point on the map.",
+          "featuresTitle": "Everything a rental marketplace needs, on both sides of the trip.",
+          "stats": {
+            "platforms": {
+              "value": "2",
+              "label": "Platforms: iOS & Android"
+            },
+            "accounts": {
+              "value": "3",
+              "label": "Account types in one app"
+            },
+            "brands": {
+              "value": "39",
+              "label": "Car brands and 892 models built in"
+            }
+          },
+          "audiences": {
+            "eyebrow": "One app, three roles",
+            "title": "Everyone in the trip has their own app experience.",
+            "subtitle": "Users pick their account type on first launch. The app then shows each of them only what they need.",
+            "rider": {
+              "where": "App",
+              "title": "Rider",
+              "body": "Books a ride or rents a car in a few taps.",
+              "points": [
+                "Ride or rental, from the home screen",
+                "Pickup and destination on the map",
+                "Clear price before confirming",
+                "Rates the trip when it ends"
+              ]
+            },
+            "owner": {
+              "where": "App",
+              "title": "Car owner",
+              "body": "A person or an agency that rents out cars.",
+              "points": [
+                "Lists cars with photos and papers",
+                "Sets the price and the free days",
+                "Accepts or declines requests",
+                "Gets paid out for every rental"
+              ]
+            },
+            "driver": {
+              "where": "App",
+              "title": "Driver",
+              "body": "Drives riders and rental customers.",
+              "points": [
+                "Verified ID and driving licence",
+                "Gets assigned to bookings",
+                "Sees each trip and its route",
+                "Builds a rating from every trip"
+              ]
+            },
+            "admin": {
+              "where": "Dashboard",
+              "title": "Operations team",
+              "body": "Runs the whole marketplace from the web.",
+              "points": [
+                "Reviews ID checks and car listings",
+                "Follows every booking and payout",
+                "Manages banners, brands and models",
+                "Team roles and permissions"
+              ]
+            }
+          },
+          "journey": {
+            "eyebrow": "A rental, start to finish",
+            "title": "Every step is recorded, so nobody argues later.",
+            "subtitle": "Each booking moves through clear stages, and the app keeps the history of who did what and when.",
+            "steps": {
+              "request": {
+                "title": "Request",
+                "body": "The rider picks a car and the days. The owner gets notified instantly."
+              },
+              "approve": {
+                "title": "Approval",
+                "body": "The owner accepts. The days are blocked, so the car can't be double-booked."
+              },
+              "handover": {
+                "title": "Handover",
+                "body": "Photos of the car, then rent and deposit are confirmed in the app."
+              },
+              "onRent": {
+                "title": "On the road",
+                "body": "The car is out. Both sides see the booking live."
+              },
+              "inspection": {
+                "title": "Return",
+                "body": "The car comes back and gets photographed again against the pickup photos."
+              },
+              "complete": {
+                "title": "Done",
+                "body": "The deposit is returned, the owner is paid and both sides leave a review."
+              }
+            }
+          },
+          "features": {
+            "booking": {
+              "title": "Ride or rental",
+              "body": "Book a ride with a driver or rent a car by the day, from the same home screen."
+            },
+            "map": {
+              "title": "Map pickup",
+              "body": "Set the pickup point and destination on the map, or use your current location."
+            },
+            "fleet": {
+              "title": "Car catalog",
+              "body": "39 brands and 892 models built in, with photos, documents, transmission and fuel per car."
+            },
+            "kyc": {
+              "title": "Identity checks",
+              "body": "IDs and licences are uploaded in the app and approved by the team before the first trip."
+            },
+            "handover": {
+              "title": "Photo handover",
+              "body": "The car is photographed at pickup and at return, so damage is never a dispute."
+            },
+            "payments": {
+              "title": "Payments & deposits",
+              "body": "Cash or online, deposits held and returned, and payouts to owners, all tracked."
+            },
+            "reviews": {
+              "title": "Ratings",
+              "body": "Riders, owners and drivers rate each other after every trip."
+            },
+            "notifications": {
+              "title": "Live notifications",
+              "body": "Requests, approvals and status changes reach everyone instantly."
+            },
+            "dashboard": {
+              "title": "Admin dashboard",
+              "body": "Users, cars, bookings, banners and categories, managed from the web."
+            },
+            "reports": {
+              "title": "Reports",
+              "body": "Bookings, users and earnings over time, at a glance."
+            },
+            "roles": {
+              "title": "Team permissions",
+              "body": "Roles with fine-grained permissions for every dashboard section."
+            },
+            "language": {
+              "title": "Arabic & English",
+              "body": "The app and dashboard in both languages, right-to-left included."
+            }
+          }
+        }
+      },
+      "osa-optics": {
+        "title": "OSA Optics",
+        "type": "Optical store · Website, iOS & Android app, dashboard",
+        "study": {
+          "summary": "An online optical store where customers try glasses on with AI, add their prescription and pick ZEISS or OSA lenses, then pay by card or on delivery. Available on the web, iPhone and Android, and run from one dashboard.",
+          "client": "OSA Optics, Egypt",
+          "services": "Website, mobile app, dashboard & AI try-on",
+          "challenge": "Buying glasses online is hard. You can't see the frame on your face, and prescription glasses need a lens type, a coating and the numbers from your eye test. Most shops just say \"message us on WhatsApp\", and the sale gets lost in the chat.",
+          "solution": "We built the whole store around that order. The customer tries the frame on with AI, chooses with or without prescription, picks the lens and coating, and adds a saved prescription. Price updates at every step. The same experience runs on the website and the app, and the team manages everything from one dashboard.",
+          "featuresTitle": "From the frame on your face to the lens in your hand.",
+          "screensTitle": "The store in your pocket.",
+          "phonesCaption": "The iPhone app, AI try-on, and choosing frame only or with prescription and lenses.",
+          "screenCaptions": [
+            "The product page: colors, specs and \"Try on\" next to the price.",
+            "The lens catalog: ZEISS, Synchrony and OSA lenses, with their coatings and starting prices.",
+            "The dashboard: 250+ products with their colors, prices and type, managed in one place."
+          ],
+          "stats": {
+            "products": {
+              "value": "250+",
+              "label": "Frames and contact lenses"
+            },
+            "platforms": {
+              "value": "3",
+              "label": "Website, iOS & Android"
+            },
+            "languages": {
+              "value": "2",
+              "label": "Languages, Arabic & English"
+            }
+          },
+          "journey": {
+            "eyebrow": "Buying prescription glasses, online",
+            "title": "Six steps, and the price is clear at every one.",
+            "subtitle": "What used to take a trip to the shop and a long chat now happens in one flow, on the site or the app.",
+            "steps": {
+              "frame": {
+                "title": "Pick a frame",
+                "body": "Browse by type, gender or brand, and pick the color."
+              },
+              "tryon": {
+                "title": "Try it on",
+                "body": "Upload a photo or use the camera, and AI shows the frame on your face."
+              },
+              "prescription": {
+                "title": "With or without",
+                "body": "Frame only, or with your prescription and premium lenses."
+              },
+              "lens": {
+                "title": "Choose the lens",
+                "body": "Single vision or progressive, blue light, PhotoLux and more, each with its price."
+              },
+              "checkout": {
+                "title": "Pay",
+                "body": "By card through Paymob, or cash on delivery."
+              },
+              "delivery": {
+                "title": "Track it",
+                "body": "Follow the order from pending to approved, out for delivery and delivered."
+              }
+            }
+          },
+          "features": {
+            "tryon": {
+              "title": "AI virtual try-on",
+              "body": "See any frame on your own face from a selfie or the camera, before you buy."
+            },
+            "lens": {
+              "title": "Lens configurator",
+              "body": "ZEISS, Synchrony and OSA lenses with their coatings, priced live as you choose."
+            },
+            "prescription": {
+              "title": "Saved prescriptions",
+              "body": "Add your eye test once and reuse it for every pair you order."
+            },
+            "storefront": {
+              "title": "Full catalog",
+              "body": "Eyeglasses, sunglasses and contact lenses, by type, gender and brand."
+            },
+            "payments": {
+              "title": "Card or cash",
+              "body": "Online payment with Paymob, or pay when the order arrives."
+            },
+            "delivery": {
+              "title": "Order tracking",
+              "body": "Every order shows its status, from pending to delivered, returns included."
+            },
+            "doctors": {
+              "title": "Doctors directory",
+              "body": "Find an eye doctor near you, filtered by area."
+            },
+            "notifications": {
+              "title": "Live alerts",
+              "body": "The team gets new orders the moment they come in."
+            },
+            "dashboard": {
+              "title": "Admin dashboard",
+              "body": "Products with colors, lenses, banners, categories, areas and doctors."
+            },
+            "roles": {
+              "title": "Team permissions",
+              "body": "Roles that decide what each employee can see and change."
+            },
+            "page": {
+              "title": "Native app",
+              "body": "The whole store on iPhone and Android, with the same account and cart."
+            },
+            "language": {
+              "title": "Arabic & English",
+              "body": "Every page in both languages, right-to-left included."
+            }
+          }
+        }
+      },
       "nile-coffee": {
         "title": "Nile Roasters",
         "type": "Brand identity"
@@ -670,7 +941,10 @@
       "screenAlt": "{title} screenshot {index}",
       "included": "Included",
       "notIncluded": "Not included",
-      "fullOnly": "Full plan"
+      "fullOnly": "Full plan",
+      "storeLabel": "Download on {store}",
+      "appStoreTop": "Download on the",
+      "googlePlayTop": "Get it on"
     }
   },
   "About": {

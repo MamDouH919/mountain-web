@@ -1,64 +1,29 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import {
-  ArrowLeft,
-  ArrowUpRight,
-  Boxes,
-  Calculator,
-  ChartColumn,
-  Languages,
-  Layers,
-  LayoutDashboard,
-  Megaphone,
-  MessageCircle,
-  Palette,
-  QrCode,
-  Search,
-  ShieldCheck,
-  ShoppingCart,
-  Smartphone,
-  Store,
-  TicketPercent,
-  UserPlus,
-  Zap,
-  type LucideIcon,
-} from "lucide-react";
+import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { CtaSection } from "@/components/home/cta-section";
 import { Reveal, RevealGroup, RevealItem } from "@/components/motion/reveal";
 import { Eyebrow } from "@/components/shared/section-heading";
 import { BrowserFrame, PhoneFrame } from "@/components/work/device-frames";
+import { featureIcon } from "@/components/work/feature-icons";
 import { PlanComparison } from "@/components/work/plan-comparison";
-import { projects, type CaseStudyFeature } from "@/content/work";
+import { StoreBadges } from "@/components/work/store-badges";
+import { Audiences, Journey } from "@/components/work/study-sections";
+import { projects, type CaseStudy } from "@/content/work";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/lib/utils";
 
 const studies = projects.filter((p) => p.caseStudy);
 
-const featureIcon: Record<CaseStudyFeature, LucideIcon> = {
-  qr: QrCode,
-  page: Smartphone,
-  contact: UserPlus,
-  dashboard: LayoutDashboard,
-  analytics: ChartColumn,
-  ads: Megaphone,
-  language: Languages,
-  cloud: Zap,
-  storefront: Store,
-  search: Search,
-  whatsapp: MessageCircle,
-  branding: Palette,
-  orders: ShoppingCart,
-  coupons: TicketPercent,
-  inventory: Boxes,
-  finance: Calculator,
-  roles: ShieldCheck,
-  tenants: Layers,
-};
-
 export function generateStaticParams() {
   return studies.map((p) => ({ id: p.id }));
+}
+
+/** A screenshot with the address its browser bar shows: its own, or the study's. */
+function screenOf(study: CaseStudy, screen: CaseStudy["screens"][number]) {
+  return typeof screen === "string" ? { src: screen, url: study.url ?? "" } : screen;
 }
 
 function findStudy(id: string) {
@@ -76,7 +41,7 @@ export async function generateMetadata({ params }: PageProps<"/[locale]/work/[id
   return {
     title: `${w("title")} · ${t("title")}`,
     description: w("study.summary"),
-    openGraph: { images: [found.study.screens[0]] },
+    openGraph: { images: [found.study.screens[0] ? screenOf(found.study, found.study.screens[0]).src : found.study.phones[0]] },
   };
 }
 
@@ -94,6 +59,9 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
   const t = await getTranslations("Work.study");
   const w = await getTranslations(`Work.projects.${id}`);
   const title = w("title");
+  const isApp = study.screens.length === 0;
+  // One caption per screen after the hero, or a single shared one.
+  const screenCaptions = w.has("study.screenCaptions") ? (w.raw("study.screenCaptions") as string[]) : null;
   // Shared section titles, unless the project words its own.
   const own = (key: "featuresTitle" | "screensTitle") => (w.has(`study.${key}`) ? w(`study.${key}`) : t(key));
 
@@ -103,7 +71,8 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
   const meta = [
     { label: t("client"), value: w("study.client") },
     { label: t("services"), value: w("study.services") },
-    { label: t("year"), value: study.year },
+    // A range like 2025–2026 must read left to right, or Arabic flips it.
+    { label: t("year"), value: study.year, ltr: true },
   ];
 
   return (
@@ -137,17 +106,20 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
             <Reveal delay={0.1}>
               <p className="text-lg leading-relaxed text-white/70 sm:text-xl">{w("study.summary")}</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a
-                  href={study.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex h-12 items-center gap-2 rounded-full bg-brand ps-6 pe-2 text-sm font-semibold text-brand-foreground shadow-[0_0_40px_-8px_var(--brand)] transition-transform hover:scale-[1.02] active:scale-[0.98]"
-                >
-                  {t("live")}
-                  <span className="flex size-8 items-center justify-center rounded-full bg-black/90 text-white transition-transform duration-300 group-hover:rotate-45 rtl:-scale-x-100 rtl:group-hover:-rotate-45">
-                    <ArrowUpRight className="size-4" />
-                  </span>
-                </a>
+                {study.stores && <StoreBadges stores={study.stores} />}
+                {study.url && (
+                  <a
+                    href={study.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group inline-flex h-12 items-center gap-2 rounded-full bg-brand ps-6 pe-2 text-sm font-semibold text-brand-foreground shadow-[0_0_40px_-8px_var(--brand)] transition-transform hover:scale-[1.02] active:scale-[0.98]"
+                  >
+                    {t("live")}
+                    <span className="flex size-8 items-center justify-center rounded-full bg-black/90 text-white transition-transform duration-300 group-hover:rotate-45 rtl:-scale-x-100 rtl:group-hover:-rotate-45">
+                      <ArrowUpRight className="size-4" />
+                    </span>
+                  </a>
+                )}
                 <Link
                   href="/contact"
                   className="inline-flex h-12 items-center rounded-full border border-white/15 px-6 text-sm font-medium text-white/85 transition-colors hover:border-white/40 hover:text-white"
@@ -163,7 +135,9 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
               {meta.map((m) => (
                 <div key={m.label}>
                   <dt className="text-xs tracking-[0.15em] text-white/40 uppercase rtl:tracking-normal">{m.label}</dt>
-                  <dd className="mt-2 text-base text-white">{m.value}</dd>
+                  <dd dir={m.ltr ? "ltr" : undefined} className="mt-2 text-base text-white rtl:text-end">
+                    {m.value}
+                  </dd>
                 </div>
               ))}
             </dl>
@@ -171,11 +145,36 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
         </div>
       </section>
 
-      {/* Hero shot */}
+      {/* Hero shot: the site in a browser, or for an app its phones on a stage */}
       <section className="px-4 sm:px-8">
-        <Reveal className="mx-auto max-w-6xl">
-          <BrowserFrame src={study.screens[0]} alt={t("screenAlt", { title, index: 1 })} url={study.url} priority />
-        </Reveal>
+        {isApp ? (
+          <Reveal className="mx-auto max-w-6xl">
+            <div
+              className="relative h-[clamp(20rem,62vw,40rem)] overflow-hidden rounded-3xl border border-white/10"
+              style={{ background: `radial-gradient(70% 80% at 50% 0%, ${project.palette[1]}55, transparent 70%), linear-gradient(180deg, ${project.palette[0]}, #050505)` }}
+            >
+              <div aria-hidden className="absolute inset-0 opacity-30 [background-image:linear-gradient(to_right,rgba(255,255,255,0.07)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.07)_1px,transparent_1px)] [background-size:40px_40px]" />
+              {study.phones.slice(0, 3).map((src, i) => (
+                <PhoneFrame
+                  key={src}
+                  src={src}
+                  alt={t("phoneAlt", { title, index: i + 1 })}
+                  className={cn(
+                    "absolute w-[38%] max-w-[17rem] sm:w-[26%]",
+                    i === 0 && "start-1/2 top-[8%] z-10 -translate-x-1/2 rtl:translate-x-1/2",
+                    i === 1 && "start-[6%] top-[18%] -rotate-6 opacity-90 sm:start-[14%] rtl:rotate-6",
+                    i === 2 && "end-[6%] top-[18%] rotate-6 opacity-90 sm:end-[14%] rtl:-rotate-6",
+                  )}
+                />
+              ))}
+            </div>
+            <p className="mt-5 text-center text-sm text-white/50">{w("study.phonesCaption")}</p>
+          </Reveal>
+        ) : (
+          <Reveal className="mx-auto max-w-6xl">
+            <BrowserFrame {...screenOf(study, study.screens[0])} alt={t("screenAlt", { title, index: 1 })} priority />
+          </Reveal>
+        )}
       </section>
 
       {/* Results */}
@@ -213,25 +212,29 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
       </section>
 
       {study.plans && <PlanComparison id={id} plans={study.plans} />}
+      {study.audiences && <Audiences id={id} audiences={study.audiences} />}
+      {study.journey && <Journey id={id} steps={study.journey} />}
 
-      {/* Phones */}
-      <section className="overflow-hidden py-10 sm:py-16">
-        <div className="mx-auto max-w-6xl px-6 sm:px-8">
-          <Reveal>
-            <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] font-semibold tracking-[-0.03em] text-white rtl:leading-[1.35] rtl:tracking-normal">
-              {own("screensTitle")}
-            </h2>
-            <p className="mt-4 max-w-xl text-base text-white/55 sm:text-lg">{w("study.phonesCaption")}</p>
-          </Reveal>
-        </div>
-        <RevealGroup className="mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-6 [scrollbar-width:none] sm:px-8 lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-4 lg:gap-6 lg:overflow-visible [&::-webkit-scrollbar]:hidden">
-          {study.phones.map((src, i) => (
-            <RevealItem key={src} className={cn("w-[62%] shrink-0 snap-center sm:w-[38%] lg:w-auto", i % 2 === 1 && "lg:translate-y-12")}>
-              <PhoneFrame src={src} alt={t("phoneAlt", { title, index: i + 1 })} />
-            </RevealItem>
-          ))}
-        </RevealGroup>
-      </section>
+      {/* Phones, unless an app already shows them in the hero */}
+      {!isApp && (
+        <section className="overflow-hidden py-10 sm:py-16">
+          <div className="mx-auto max-w-6xl px-6 sm:px-8">
+            <Reveal>
+              <h2 className="text-[clamp(2rem,4.5vw,3.5rem)] leading-[1.05] font-semibold tracking-[-0.03em] text-white rtl:leading-[1.35] rtl:tracking-normal">
+                {own("screensTitle")}
+              </h2>
+              <p className="mt-4 max-w-xl text-base text-white/55 sm:text-lg">{w("study.phonesCaption")}</p>
+            </Reveal>
+          </div>
+          <RevealGroup className="mt-12 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-6 [scrollbar-width:none] sm:px-8 lg:mx-auto lg:grid lg:max-w-6xl lg:grid-cols-4 lg:gap-6 lg:overflow-visible [&::-webkit-scrollbar]:hidden">
+            {study.phones.map((src, i) => (
+              <RevealItem key={src} className={cn("w-[62%] shrink-0 snap-center sm:w-[38%] lg:w-auto", i % 2 === 1 && "lg:translate-y-12")}>
+                <PhoneFrame src={src} alt={t("phoneAlt", { title, index: i + 1 })} />
+              </RevealItem>
+            ))}
+          </RevealGroup>
+        </section>
+      )}
 
       {/* Features */}
       <section className="px-6 py-20 sm:px-8 sm:py-28">
@@ -269,11 +272,11 @@ export default async function CaseStudyPage({ params }: PageProps<"/[locale]/wor
       </section>
 
       {/* Remaining desktop screens */}
-      {study.screens.slice(1).map((src, i) => (
-        <section key={src} className="px-4 pb-10 sm:px-8">
+      {study.screens.slice(1).map((screen, i) => (
+        <section key={screenOf(study, screen).src} className="px-4 pb-10 sm:px-8">
           <Reveal className="mx-auto max-w-6xl">
-            <BrowserFrame src={src} alt={t("screenAlt", { title, index: i + 2 })} url={study.url} />
-            <p className="mt-5 text-center text-sm text-white/50">{w("study.dashboardCaption")}</p>
+            <BrowserFrame {...screenOf(study, screen)} alt={t("screenAlt", { title, index: i + 2 })} />
+            <p className="mt-5 text-center text-sm text-white/50">{screenCaptions?.[i] ?? w("study.dashboardCaption")}</p>
           </Reveal>
         </section>
       ))}
