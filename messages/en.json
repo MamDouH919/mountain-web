@@ -869,6 +869,415 @@
           }
         }
       },
+      "al-kaabi": {
+        "title": "Al Kaabi Advocates",
+        "type": "Law firm website · Bilingual site & content dashboard",
+        "study": {
+          "summary": "A bilingual website for a UAE law firm: 20 practice areas, court judgments, legal news and the team, with a free first consultation one tap away. Every word on it is managed by the firm from its own dashboard.",
+          "client": "Mohamed Salem Al Kaabi Advocates & Legal Consultants, UAE",
+          "services": "Web design, development & admin dashboard",
+          "challenge": "A law firm sells trust, and its old online presence didn't show it. Clients couldn't tell which cases the firm handles, who the lawyers are or how to reach them quickly. And every new article or judgment needed a developer.",
+          "solution": "We built a calm, premium site in Arabic and English around the firm's 20 practice areas. Each service has its own page, the team and judgments build trust, and WhatsApp, a call and a consultation booking are always on screen. Behind it, a dashboard lets the firm publish news, judgments and services by itself.",
+          "featuresTitle": "Everything a law firm needs to be found, trusted and contacted.",
+          "screensTitle": "Built for clients on their phones.",
+          "phonesCaption": "The Arabic site on mobile: the home page, a service page, the team and the careers page.",
+          "screenCaptions": [
+            "The services menu: all 20 practice areas, one click from any page.",
+            "A service page: what the firm does, why clients choose it, and a call button always in view.",
+            "The team: every lawyer with a photo, title and specialty."
+          ],
+          "stats": {
+            "services": {
+              "value": "20",
+              "label": "Practice areas, each with its own page"
+            },
+            "sections": {
+              "value": "12",
+              "label": "Sections managed from the dashboard"
+            },
+            "languages": {
+              "value": "2",
+              "label": "Languages, Arabic & English"
+            }
+          },
+          "journey": {
+            "eyebrow": "From visitor to client",
+            "title": "Every page leads to one thing: a consultation.",
+            "subtitle": "The site walks visitors from their legal problem to a conversation with a lawyer, in as few steps as possible.",
+            "steps": {
+              "discover": {
+                "title": "Find the area",
+                "body": "The services menu shows all 20 practice areas at a glance."
+              },
+              "service": {
+                "title": "Read the service",
+                "body": "A clear page per service, with the related sub-services."
+              },
+              "trust": {
+                "title": "Meet the firm",
+                "body": "The lawyers, recent judgments and legal news build trust."
+              },
+              "consult": {
+                "title": "Get in touch",
+                "body": "WhatsApp, a call or a booking for the free first consultation."
+              },
+              "follow": {
+                "title": "Stay informed",
+                "body": "Subscribe to the newsletter for legal updates."
+              },
+              "join": {
+                "title": "Join the team",
+                "body": "Lawyers and support staff apply from the careers page."
+              }
+            }
+          },
+          "features": {
+            "legal": {
+              "title": "20 practice areas",
+              "body": "From litigation and corporate law to cybercrime, each with sub-services."
+            },
+            "judgments": {
+              "title": "Court judgments",
+              "body": "Highlights of significant rulings, published by the firm."
+            },
+            "news": {
+              "title": "Legal news",
+              "body": "Articles written in a rich text editor, with images and formatting."
+            },
+            "team": {
+              "title": "The team",
+              "body": "Every lawyer's photo, title and specialties, in both languages."
+            },
+            "whatsapp": {
+              "title": "One-tap contact",
+              "body": "WhatsApp and call buttons on every page, plus consultation booking."
+            },
+            "careers": {
+              "title": "Careers",
+              "body": "A Join Us page for legal and support roles."
+            },
+            "newsletter": {
+              "title": "Newsletter",
+              "body": "Visitors subscribe; the firm sees every subscriber in the dashboard."
+            },
+            "seo": {
+              "title": "SEO built in",
+              "body": "Readable URLs and metadata for every page, service and article."
+            },
+            "dashboard": {
+              "title": "Content dashboard",
+              "body": "Banners, sections, services, partners, settings and contact messages."
+            },
+            "backup": {
+              "title": "One-click backup",
+              "body": "Export the whole database to a file, and restore it from one."
+            },
+            "roles": {
+              "title": "Team permissions",
+              "body": "Each staff member gets only the sections they need."
+            },
+            "language": {
+              "title": "Arabic & English",
+              "body": "Every page in both languages, right-to-left included."
+            }
+          }
+        }
+      },
+      "arab-clinic": {
+        "title": "Arab Clinic",
+        "type": "Medical center website · Bilingual site & dashboard",
+        "study": {
+          "summary": "A bilingual website for a medical center with 22 departments, 18 doctors and 6 branches. Patients find the right specialist, see their profile, and call or WhatsApp the nearest branch to book. The clinic runs all of it from its own dashboard.",
+          "client": "Arab Clinic, Egypt",
+          "services": "Web design, development & admin dashboard",
+          "challenge": "With 22 departments across 6 branches, patients didn't know which doctor to see or which branch was closest. Bookings came through scattered phone numbers, and the clinic had no single place to show its doctors, services and news.",
+          "solution": "We organized the whole clinic around how patients search: by department, by doctor, or by branch. Every doctor has a profile page, every department lists its specialists, and every branch has its own call, WhatsApp and map buttons. Behind it, a dashboard keeps doctors, departments, branches, news and jobs up to date.",
+          "featuresTitle": "From \"what do I have?\" to \"I'm booked\", in a few taps.",
+          "screensTitle": "Made for patients on the go.",
+          "phonesCaption": "The Arabic site on mobile: home, finding a doctor, a doctor's profile and a department page.",
+          "screenCaptions": [
+            "Find a Doctor: search by name or filter by department.",
+            "All 22 departments, each with its own page.",
+            "A department page: what it treats, with every other department one click away."
+          ],
+          "stats": {
+            "departments": {
+              "value": "22",
+              "label": "Medical departments"
+            },
+            "doctors": {
+              "value": "18",
+              "label": "Doctors with their own profile"
+            },
+            "branches": {
+              "value": "6",
+              "label": "Branches, each one tap away"
+            }
+          },
+          "journey": {
+            "eyebrow": "From symptom to appointment",
+            "title": "Built around how patients actually look for care.",
+            "subtitle": "Whether they start from a department, a doctor's name or the nearest branch, every path ends with a booking.",
+            "steps": {
+              "department": {
+                "title": "Pick a department",
+                "body": "22 departments, from cardiology to dentistry, each explained clearly."
+              },
+              "doctor": {
+                "title": "Find the doctor",
+                "body": "Search by name or filter by department."
+              },
+              "profile": {
+                "title": "Check the profile",
+                "body": "Qualifications, specialty and department, with a photo."
+              },
+              "branch": {
+                "title": "Choose a branch",
+                "body": "Six branches with their address and location on the map."
+              },
+              "book": {
+                "title": "Book",
+                "body": "Call or WhatsApp the branch directly from the page."
+              },
+              "follow": {
+                "title": "Come back",
+                "body": "Medical news and blog posts keep patients informed."
+              }
+            }
+          },
+          "features": {
+            "hospital": {
+              "title": "Departments",
+              "body": "22 departments, each with its own page, equipment and specialists."
+            },
+            "doctors": {
+              "title": "Doctor profiles",
+              "body": "Every doctor's photo, qualifications and department."
+            },
+            "search": {
+              "title": "Find a doctor",
+              "body": "Search by name and filter by department, instantly."
+            },
+            "map": {
+              "title": "Branches",
+              "body": "Six branches with address, map, call and WhatsApp."
+            },
+            "whatsapp": {
+              "title": "One-tap booking",
+              "body": "Call and WhatsApp buttons follow the patient on every page."
+            },
+            "reviews": {
+              "title": "Patient reviews",
+              "body": "Visitors share their experience, and the clinic publishes the best."
+            },
+            "news": {
+              "title": "News & blog",
+              "body": "Health articles and clinic news, written in the dashboard."
+            },
+            "careers": {
+              "title": "Careers",
+              "body": "Open jobs on the site, with applications received in the dashboard."
+            },
+            "dashboard": {
+              "title": "Admin dashboard",
+              "body": "Doctors, departments, branches, banners, partners and settings."
+            },
+            "backup": {
+              "title": "One-click backup",
+              "body": "Export the whole database to a file, and restore it from one."
+            },
+            "roles": {
+              "title": "Team permissions",
+              "body": "Each staff member gets only the sections they need."
+            },
+            "language": {
+              "title": "Arabic & English",
+              "body": "Every page in both languages, right-to-left included."
+            }
+          }
+        }
+      },
+      "elite-bridge": {
+        "title": "Elite Bridge",
+        "type": "Business services website · UAE",
+        "study": {
+          "summary": "A bilingual website for a Dubai business services center: Amer, Tasheel, Tawjeeh, visas, company setup and 14 service categories in all, with searchable price lists and a WhatsApp button on every service.",
+          "client": "Elite Bridge Businessmen Services, Dubai",
+          "services": "Web design & development, SEO",
+          "challenge": "Government transactions in the UAE are confusing: which center handles what, which papers are needed and how much it costs. Customers called to ask about every single service, and the team answered the same questions all day.",
+          "solution": "We built a site that answers those questions before the call. Every service category has its own section, Amer and Tasheel come with full price lists you can search in Arabic or English, and each service has a WhatsApp button that starts the request right away.",
+          "featuresTitle": "Government paperwork, made clear before the first call.",
+          "screensTitle": "Ready on the phone, where customers ask.",
+          "phonesCaption": "The Arabic site on mobile: home, the Amer price list, service categories and the contact form.",
+          "screenCaptions": [
+            "Service categories, from immigration and visas to municipality and RTA.",
+            "Amer and Tasheel price lists: every transaction and its fee, searchable.",
+            "The office on the map, one tap from directions."
+          ],
+          "stats": {
+            "categories": {
+              "value": "14",
+              "label": "Service categories"
+            },
+            "transactions": {
+              "value": "68",
+              "label": "Transactions with their fees listed"
+            },
+            "languages": {
+              "value": "2",
+              "label": "Languages, Arabic & English"
+            }
+          },
+          "features": {
+            "government": {
+              "title": "14 service categories",
+              "body": "Amer, Tasheel, Tawjeeh, Dubai Economy, visas, Emirates ID, RTA and more."
+            },
+            "search": {
+              "title": "Searchable price lists",
+              "body": "68 Amer and Tasheel transactions with their fees, searchable in both languages."
+            },
+            "whatsapp": {
+              "title": "WhatsApp per service",
+              "body": "Each service has its own button that opens a chat about that exact service."
+            },
+            "contact": {
+              "title": "Contact form",
+              "body": "Requests arrive in the company inbox by email, with the chosen service."
+            },
+            "map": {
+              "title": "Location",
+              "body": "The office on Google Maps, with address, phone and email."
+            },
+            "seo": {
+              "title": "SEO",
+              "body": "Titles and descriptions written for searches like Amer and Tasheel in Dubai."
+            },
+            "analytics": {
+              "title": "Google Analytics",
+              "body": "Visits and traffic sources tracked from day one."
+            },
+            "language": {
+              "title": "Arabic & English",
+              "body": "Every page in both languages, right-to-left included."
+            }
+          }
+        }
+      },
+      "elevera": {
+        "title": "Elevera PM Academy",
+        "type": "Learning platform · Student site, admin dashboard & API",
+        "study": {
+          "summary": "A complete learning platform for project management courses: protected video lessons, timed certificate exams, AI-translated questions and verifiable certificates, with a dashboard that runs every course, student and payment.",
+          "client": "Elevera PM Academy, Egypt",
+          "services": "Product design, web app, admin dashboard & backend",
+          "challenge": "PMP, CAPM and RMP courses are expensive to produce and easy to pirate. The academy needed more than a video playlist: lessons that can't be downloaded and shared, exams that feel like the real one, and certificates employers can actually check.",
+          "solution": "We built three apps on one backend. Students watch watermarked, protected videos, track their progress, sit timed exams and retake only the questions they got wrong. Passing unlocks a numbered certificate anyone can verify. The team runs courses, payments, exams and emails from a dashboard.",
+          "featuresTitle": "Everything between \"enroll\" and \"certified\".",
+          "screensTitle": "Learn anywhere, on any screen.",
+          "phonesCaption": "On mobile: the home page, the course catalog, a course page and certificate verification.",
+          "screenCaptions": [
+            "Why Elevera: what changes when you learn with a team instead of alone.",
+            "The course catalog, filterable by course and status.",
+            "A course page: what's included, the price, and enrolling or booking via WhatsApp."
+          ],
+          "stats": {
+            "apps": {
+              "value": "3",
+              "label": "Apps: student site, dashboard & API"
+            },
+            "exam": {
+              "value": "4h",
+              "label": "Timed exams, modeled on the real one"
+            },
+            "currencies": {
+              "value": "5",
+              "label": "Currencies, from EGP to USD"
+            }
+          },
+          "journey": {
+            "eyebrow": "From enrollment to certificate",
+            "title": "A course that runs like the project it teaches.",
+            "subtitle": "Every step is tracked, so students always know what's next, and the academy knows who earned what.",
+            "steps": {
+              "enroll": {
+                "title": "Enroll",
+                "body": "Pay by InstaPay or mobile wallet, and the team activates the course."
+              },
+              "watch": {
+                "title": "Watch",
+                "body": "Protected, watermarked video lectures with downloadable resources."
+              },
+              "progress": {
+                "title": "Track",
+                "body": "Progress is saved for every lecture, on every device."
+              },
+              "exam": {
+                "title": "Sit the exam",
+                "body": "A timed, scored exam with a limited number of attempts."
+              },
+              "mistakes": {
+                "title": "Fix mistakes",
+                "body": "Retake only the questions you got wrong until they stick."
+              },
+              "certificate": {
+                "title": "Get certified",
+                "body": "A numbered certificate, verifiable by anyone online."
+              }
+            }
+          },
+          "features": {
+            "video": {
+              "title": "Protected video",
+              "body": "DRM streaming with a watermark, so lessons can't be downloaded or shared."
+            },
+            "cloud": {
+              "title": "Own video pipeline",
+              "body": "Uploads are transcoded in the background and served from Cloudflare R2."
+            },
+            "exam": {
+              "title": "Timed exams",
+              "body": "Single choice, multiple choice and true/false, with a time limit, attempts and a pass mark."
+            },
+            "retry": {
+              "title": "Mistakes exam",
+              "body": "A course-wide exam built from each student's wrong answers."
+            },
+            "translate": {
+              "title": "AI translation",
+              "body": "Exams and questions are translated to Arabic with Gemini, in a background queue."
+            },
+            "certificate": {
+              "title": "Certificates",
+              "body": "Generated from a template with the student's name and a running serial number."
+            },
+            "kyc": {
+              "title": "Public verification",
+              "body": "Anyone can check a certificate by its number on the site."
+            },
+            "analytics": {
+              "title": "Progress & analytics",
+              "body": "Watch time per lecture for students, and course analytics for the team."
+            },
+            "payments": {
+              "title": "Local payments",
+              "body": "InstaPay, mobile wallets and manual activation, in five currencies."
+            },
+            "sessions": {
+              "title": "Session control",
+              "body": "Every login is a session the team can see and revoke."
+            },
+            "notifications": {
+              "title": "Announcements & email",
+              "body": "News on the site, and email broadcasts sent through a queue."
+            },
+            "dashboard": {
+              "title": "Admin dashboard",
+              "body": "Courses, drag-and-drop lectures, students, payments, reviews, FAQs and storage usage."
+            }
+          }
+        }
+      },
       "nile-coffee": {
         "title": "Nile Roasters",
         "type": "Brand identity"
